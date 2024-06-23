@@ -3,8 +3,8 @@ let name = prompt('Введите имя:')
 alert('Привет, ' + name + '!')
 
 //Задание 2
-let number = prompt('Введите число:')
-let degree = prompt('Введите степень, в которую нужно возвести число:')
+let number = +prompt('Введите число:')
+let degree = +prompt('Введите степень, в которую нужно возвести число:')
 console.log(number ** degree)
 
 //Задание 4
@@ -38,8 +38,8 @@ if (num2 < 5) {
 console.log(result)
 
 //Задание 7
-let num3 = prompt('Введите первое число:')
-let num4 = prompt('Введите второе число:')
+let num3 = +prompt('Введите первое число:')
+let num4 = +prompt('Введите второе число:')
 if (num3 > num4) {
   console.log('Большее число: ' + num3)
 } else if (num3 < num4) {
@@ -49,8 +49,8 @@ if (num3 > num4) {
 }
 
 //Задание 8
-let num5 = prompt('Введите первое число:')
-let num6 = prompt('Введите второе число:')
+let num5 = +prompt('Введите первое число:')
+let num6 = +prompt('Введите второе число:')
 if (num5 % num6 == 0) {
   console.log('Число ' + num5 + ' кратно ' + num6)
 } else {
@@ -68,8 +68,8 @@ if (grade <= 4 && grade >= 1) {
 }
 
 //Задание 10
-let grade2 = prompt('Введите балл за экзамен (от 0 до 100):')
-let quantity = prompt(
+let grade2 = +prompt('Введите балл за экзамен (от 0 до 100):')
+let quantity = +prompt(
   'Введите количество выполненных проектов (от 0 и больше):',
 )
 if (grade2 > 90 || quantity > 10) {
